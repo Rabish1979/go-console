@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  consoleserver-apiserver:
+    image: consoleserver-apiserver:dev
+    container_name: consoleserver-apiserver
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+      - '8080:8080'
